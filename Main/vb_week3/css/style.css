@@ -117,7 +117,9 @@ figure {
 
 
 figure img {
-  width:100%;
+  position: fixed;
+  width:10vw;
+  bottom: 0
 }
 
 figcaption {
@@ -129,9 +131,9 @@ figcaption {
 
 footer {
   padding: 2%;
-  position: absolute;
   bottom: 0;
   width: 100vw;
+  height: 2vh;
   background-color: #ffd6a6;
   font-size: 16px;
   font-family: verdana, arial, sans-serif;
