@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   font-family: 'Oswald', arial, sans-serif;
-  color: #ff75b8;
+  color: #6ebeff;
   font-size: 20px;
 }
 
@@ -22,7 +22,7 @@ section.parent {
   grid-column: 1 / 6;
   grid-row: 2 / 4;
   border-radius: 15px;
-  background-color: #fbf0ff;
+  background-color: #edfaff;
   opacity: 80%;
   transition: 0.5s;
 }
@@ -35,7 +35,7 @@ section.parent {
   grid-column: 2 / 6;
   grid-row: 4 / 7;
   border-radius: 15px;
-  background-color: #fbf0ff;
+  background-color: #edfaff;
   opacity: 80%;
   transition: 0.5s;
 }
@@ -48,7 +48,7 @@ section.parent {
   grid-column: 2 / 6;
   grid-row: 7 / 9;
   border-radius: 15px;
-  background-color: #fbf0ff;
+  background-color: #edfaff;
   opacity: 80%;
   transition: 0.5s;
 }
@@ -61,7 +61,7 @@ section.parent {
   grid-column: 2 / 6;
   grid-row: 9 / 9;
   border-radius: 15px;
-  background-color: #fbf0ff;
+  background-color: #edfaff;
   opacity: 80%;
   transition: 0.5s;
 }
@@ -74,7 +74,7 @@ section.parent {
   grid-column: 2 / 6;
   grid-row: 9 / 12;
   border-radius: 15px;
-  background-color: #fbf0ff;
+  background-color: #edfaff;
   opacity: 80%;
   transition: 0.5s;
 }
@@ -87,7 +87,7 @@ section.parent {
   grid-column: 2 / 6;
   grid-row: 12 / 13;
   border-radius: 15px;
-  background-color: #fbf0ff;
+  background-color: #edfaff;
   opacity: 80%;
   transition: 0.5s;
 }
@@ -100,7 +100,7 @@ section.parent {
   grid-column: 2 / 6;
   grid-row: 13 / 15;
   border-radius: 15px;
-  background-color: #fbf0ff;
+  background-color: #edfaff;
   opacity: 80%;
   transition: 0.5s;
 }
@@ -116,7 +116,7 @@ h1 {
   font-family: 'Oswald', verdana, sans-serif;
   font-weight: 600;
   text-transform: none;
-  color: #fbf0ff;
+  color: #edfaff;
 }
 
 header {
@@ -128,7 +128,7 @@ header {
 }
 
 header h1 {
-  color: #ff75b8;
+  color: #6ebeff;
   font-size: 130%;
   line-height: 120%;
   border-radius: 25px;
@@ -146,7 +146,7 @@ article {
 .a1 {
   grid-column: 1 / 6;
   grid-row: 1 / 1;
-  background-color: #ff75b8;
+  background-color: #6ebeff;
   padding: 3% 3% 10% 3%;
   margin-bottom: 5%;
   transition: 1.75s;
@@ -246,5 +246,5 @@ article {
 }
 
 body {
-  background-color: #fbf0ff
+  background-color: #edfaff;
 }
