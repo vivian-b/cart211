@@ -6,7 +6,7 @@
 
 body {
 
-  background-color: #f5ffeb;
+  background-color: #F7F7F7;
   font-family: 'Roboto', arial, sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -22,6 +22,10 @@ header {
   background-color: #71E87B;
   height:auto;
   padding: 5%  0% 4% 4%;
+  animation-name: coloranimation;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+
 }
 
 nav{
@@ -38,6 +42,7 @@ nav{
   text-transform: uppercase;
   color: #F7FCFB;
   margin: auto;
+
 
 }
 
@@ -60,7 +65,7 @@ h3 {
 }
 
 nav a:link {
-  background-color: #36D189;
+  background-color: #ACACAC;
   color: #F7FCFB;
   padding: 1% 3%;
   display:inline-block;
@@ -82,10 +87,13 @@ a:visited {
 
 a.active {
   background-color: #71E87B;
+  animation-name: coloranimation;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
 }
 
 nav a:hover {
-background-color: #90ED5E;
+background-color: #525252;
   transition: 1s;
 }
 
@@ -158,4 +166,11 @@ img.mockupimg{
 a.weblink {
   color: #40d49e;
 
+}
+
+@keyframes coloranimation {
+
+  0% {background-color: #71E87B}
+  20% {background-color: #C786FF}
+  75% {background-color: #62C3FF}
 }
