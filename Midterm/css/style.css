@@ -139,11 +139,11 @@ transition: 0.75s ease;
 
 .groupmockup{
 display:flex;
-width: 100vw;
+width: 90vw;
 }
 
 img.mockupimg{
-  width: 23%;
+  width: 20%;
   height: auto;
   margin: auto;
   margin-top: 0;
