@@ -38,6 +38,7 @@ nav{
   text-transform: uppercase;
   color: #F7FCFB;
   margin: auto;
+
 }
 
 h2 {
@@ -46,7 +47,6 @@ h2 {
   font-weight: 400;
   color: #40d49e;
   line-height:2em;
-text-align: center;
 }
 
 h3 {
@@ -55,6 +55,8 @@ h3 {
   font-size: 24px;
   color: #265e63;
   line-height:2em;
+  margin-bottom: 2%;
+
 }
 
 nav a:link {
@@ -65,11 +67,13 @@ nav a:link {
   text-decoration: none;
 }
 
+
 a:link {
   color: #F7FCFB;
   font-family: 'Roboto',verdana, sans-serif;
   font-size: 18px;
   text-decoration: none;
+
 }
 
 a:visited {
@@ -81,7 +85,8 @@ a.active {
 }
 
 nav a:hover {
-background-color: #90ED5E
+background-color: #90ED5E;
+  transition: 1s;
 }
 
 article {
@@ -103,7 +108,12 @@ article {
   margin: 3% 1%;
   font-family: 'Roboto',verdana,sans-serif;
   font-weight: 300;
-  border-left: solid 15px #40d49e;
+  border-left: solid 0px #40d49e;
+}
+
+.readings_answer:hover {
+border-left: solid 15px #C786FF;
+transition: 0.75s;
 }
 
 .text_block{
@@ -117,12 +127,19 @@ article {
   font-family: 'Roboto',verdana, sans-serif;
   font-weight: 300;
   border-left: solid 15px #40d49e;
-
 }
 
 img{
-  width: 80vw;
+  width: 30vw;
   align-items: center;
+  margin-bottom: 2%;
+}
+
+
+img:hover {
+width: 80vw;
+transition: 0.75s ease;
+
 }
 
 .groupmockup{
@@ -133,7 +150,9 @@ width: 100vw;
 img.mockupimg{
   width: 23%;
   height: auto;
-  margin: 2%
+  margin: auto;
+  margin-top: 0;
+
 }
 
 a.weblink {
