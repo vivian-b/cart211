@@ -122,5 +122,21 @@ article {
 
 img{
   width: 80vw;
-  align-self: center;
+  align-items: center;
+}
+
+.groupmockup{
+display:flex;
+width: 100vw;
+}
+
+img.mockupimg{
+  width: 20%;
+  height: auto;
+  margin: 2%
+}
+
+a.weblink {
+  color: #40d49e;
+
 }
