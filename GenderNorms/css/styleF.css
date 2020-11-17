@@ -168,7 +168,7 @@ article {
 
 }
 
-.buttonF, .buttonM, .buttonI{
+.buttonFactive, .buttonM, .buttonI{
   background-color: #656565;
   color: #F7FCFB;
   padding: 4% 12% 4% 12%;
@@ -177,7 +177,7 @@ article {
   font-size: 90%;
 }
 
-.buttonF:hover{
+.buttonFactive{
   background-color: #C786FF
 }
 
@@ -186,7 +186,7 @@ article {
 }
 
 .buttonI:hover{
-  background-color: #71E87B;
+  background-color: #56E863;
 }
 
 .link{

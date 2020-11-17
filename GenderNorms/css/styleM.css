@@ -169,7 +169,7 @@ article {
 
 }
 
-.buttonF, .buttonM, .buttonI{
+.buttonF, .buttonMactive, .buttonI{
   background-color: #656565;
   color: #F7FCFB;
   padding: 4% 12% 4% 12%;
@@ -182,12 +182,12 @@ article {
   background-color: #C786FF
 }
 
-.buttonM:hover{
+.buttonMactive{
   background-color: #62C3FF;
 }
 
 .buttonI:hover{
-  background-color: #71E87B;
+  background-color: #56E863;
 }
 
 .link{
