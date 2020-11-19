@@ -194,6 +194,41 @@ body {
 }
 
 
+@media only screen and (min-width: 100px){
+  *{
+    font-size: 110%
+  }
+
+  h1 {
+    font-size: 480%;
+    line-height: 90%;
+    padding-top: 20%;
+  }
+
+  article {
+    border-radius: 35px;
+    padding: 3% 3% 3% 3%;
+  }
+
+  section.parent {
+    display: grid;
+    grid-template-columns: 15vw 1fr;
+    grid-gap: 2vmin;
+  }
+
+  .buttonF, .buttonM, .buttonIactive{
+    padding: 9% 20% 9% 20%;
+    text-decoration: none;
+    border-radius: 45px;
+    font-size: 90%;
+    margin-left: 1VW;
+  }
+
+  .link{
+    margin-top: 25%;
+  }
+}
+
 /* tablet [1024 x 768] & deskstop (1) [1366 x 768] size */
 @media only screen and (min-width: 1024px){
   *{
@@ -280,7 +315,7 @@ body {
 }
 
 /* mobile screen [360 x 640] size */
-
+/*
 @media only screen and (min-width: 360px){
   *{
     font-size: 100%
@@ -318,7 +353,7 @@ body {
 
 
 nav{
-  grid-column: 1/2;
+  grid-column: 2 /2;
 }
 
   .buttonF, .buttonM, .buttonIactive{
@@ -334,4 +369,4 @@ nav{
   }
 
 
-}
+} */
