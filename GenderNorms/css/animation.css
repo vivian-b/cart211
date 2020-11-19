@@ -1,1 +1,25 @@
 /* animations */
+
+.slideL {
+	opacity: 0;
+	transform: translateX(-2em);
+	transition: all 1s .35s ease-out;
+	will-change: all;
+}
+
+.slideL.is-visible {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.slideR {
+	opacity: 0;
+	transform: translateX(2em);
+	transition: all 1s .35s ease-out;
+	will-change: all;
+}
+
+.slideR.is-visible {
+	opacity: 1;
+	transform: translateX(0);
+}
