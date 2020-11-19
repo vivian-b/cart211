@@ -194,7 +194,6 @@ body {
 }
 
 
-
 /* tablet [1024 x 768] & deskstop (1) [1366 x 768] size */
 @media only screen and (min-width: 1024px){
   *{
@@ -281,7 +280,7 @@ body {
 }
 
 /* mobile screen [360 x 640] size */
-/*
+
 @media only screen and (min-width: 360px){
   *{
     font-size: 100%
@@ -319,7 +318,7 @@ body {
 
 
 nav{
-  grid-column: 2 /2;
+  grid-column: 1/2;
 }
 
   .buttonF, .buttonM, .buttonIactive{
@@ -335,4 +334,4 @@ nav{
   }
 
 
-} */
+}
