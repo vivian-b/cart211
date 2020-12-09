@@ -10,6 +10,7 @@
   line-height: 136%;
 }
 
+
 /* GRID SETUP */
 section.parent {
   width: 100vw;
@@ -141,7 +142,7 @@ margin-bottom: auto;
 
 }
 
-.buttonF, .buttonM,.buttonIactive{
+.buttonF, .buttonM,.buttonI{
   background-color: #656565;
   color: #F7FCFB;
   padding: 9% 15% 9% 15%;
@@ -163,7 +164,7 @@ margin-bottom: auto;
 
 }
 
-.buttonIactive{
+.active{
   background-color: #56E863;
 
 }
