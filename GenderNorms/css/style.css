@@ -32,26 +32,32 @@ h1 {
 
 nav {
   grid-column: 1 / 1;
-  grid-row: 1 / 1;
+  grid-row:   2 / 3;
   position: sticky;
-  padding-top: 15%;
   top: 0;
   z-index: 100;
 }
 
-
-article {
+.textbox{
+  grid-column: 2 / 3;
   background-color: #ffffff;
-  border-radius: 15px;
   padding: 2% 3% 2% 3%;
   box-shadow: -4px 4px 6px 0px #B2B2B2;
   height: auto;
 
 }
 
+.sideL{
+  margin-right: auto;
+}
+
+.sideR{
+  margin-left: auto;
+
+}
+
 /* title box */
 .a1 {
-  grid-column: 2 / 3;
   grid-row: 1 / 1;
   background-color: #56E863;
   padding: 18% 3% 3% 3%;
@@ -59,96 +65,74 @@ article {
 }
 
 .a2 {
-  grid-column: 2 / 3;
   grid-row: 2 / 2;
-  padding-left: auto;
-  margin-right: 10%;
+margin-bottom: auto;
 }
 
 .a3 {
-  grid-column: 2 / 3;
   grid-row: 3 / 3;
-  margin-left: auto;
 
 }
 
 .a4 {
-  grid-column: 2 / 3;
   grid-row: 4 / 4;
-  margin-right: auto;
 
 }
 
 .a5 {
-  grid-column: 2 / 3;
   grid-row: 5 / 5;
-  margin-left: auto;
 }
 
 .a6 {
-  grid-column: 2 / 3;
   grid-row: 6 / 7;
-  margin-left: 50%;
+  margin-left: 30%;
+
 }
 
 .a7 {
-  grid-column: 2 / 3;
   grid-row: 7 / 7;
-  margin-right: auto;
 }
 
 .a8 {
-  grid-column: 2 / 3;
   grid-row: 8 / 8;
-  margin-right: auto;
 
 }
 
 .a9 {
-  grid-column: 2 / 3;
   grid-row: 9 / 9;
-  margin-left: auto;
 
 }
 
 .a10 {
-  grid-column: 2 / 3;
   grid-row: 10 / 10;
-  margin-right: auto;
 
 }
 
 .a11 {
-  grid-column: 2 / 3;
   grid-row: 11 / 11;
-  margin-right: auto;
 }
 
 .a12 {
-  grid-column: 2 / 3;
   grid-row: 12 / 12;
   margin-left: auto;
 }
 
 .a13 {
-  grid-column: 2 / 3;
   grid-row: 13 / 13;
-  margin-left: 40%;
+  margin-left: 20%;
 
 }
 
 .a14 {
-  grid-column: 2 / 3;
   grid-row: 14 / 14;
-  margin-right: auto;
 
 }
 
 .spacing{
-  grid-column: 2 / 3;
   grid-row: 16 / 16;
   height: 100px;
 }
+
 
  .a3 ,.a5 ,.a6 , .a9, .a12 ,.a13 {
   background-color: #56E863;
@@ -157,14 +141,15 @@ article {
 
 }
 
-.buttonF, .buttonM, .buttonIactive{
+.buttonF, .buttonM,.buttonIactive{
   background-color: #656565;
   color: #F7FCFB;
-  padding: 6% 10% 6% 10%;
+  padding: 9% 15% 9% 15%;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 40px;
   font-size: 90%;
 }
+
 
 .buttonF:hover{
   background-color: #C786FF;
@@ -193,46 +178,10 @@ body {
 
 }
 
-
-@media only screen and (min-width: 100px){
-  *{
-    font-size: 110%
-  }
-
-  h1 {
-    font-size: 480%;
-    line-height: 90%;
-    padding-top: 20%;
-  }
-
-  article {
-    border-radius: 35px;
-    padding: 3% 3% 3% 3%;
-  }
-
-  section.parent {
-    display: grid;
-    grid-template-columns: 15vw 1fr;
-    grid-gap: 2vmin;
-  }
-
-  .buttonF, .buttonM, .buttonIactive{
-    padding: 9% 20% 9% 20%;
-    text-decoration: none;
-    border-radius: 45px;
-    font-size: 90%;
-    margin-left: 1VW;
-  }
-
-  .link{
-    margin-top: 25%;
-  }
-}
-
 /* tablet [1024 x 768] & deskstop (1) [1366 x 768] size */
 @media only screen and (min-width: 1024px){
   *{
-    font-size: 110%
+    font-size: 90%
   }
 
   h1 {
@@ -252,22 +201,16 @@ body {
     grid-gap: 2vmin;
   }
 
-  .buttonF, .buttonM, .buttonIactive{
-    padding: 9% 20% 9% 20%;
-    text-decoration: none;
-    border-radius: 45px;
-    font-size: 90%;
-    margin-left: 1VW;
-  }
-
   .link{
     margin-top: 25%;
   }
+
+
 }
 
 /* desktop [1920 x 1080] (2) size */
 
-@media only screen and (min-width: 1920px){
+@media only screen and (max-width: 1920px){
   *{
     font-size: 115%
 
@@ -293,32 +236,23 @@ body {
   }
 
   .a1 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 1;
-    background-color: #56E863;
     padding: 28% 3% 3% 3%;
     margin-bottom: 2%;
   }
 
 
-  .buttonF, .buttonM, .buttonIactive{
-    padding: 9% 20% 9% 20%;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 120%;
-    margin-left: 1VW;
-  }
 
   .link{
     margin-top: 25%;
   }
+
 }
 
 /* mobile screen [360 x 640] size */
-/*
-@media only screen and (min-width: 360px){
+
+@media only screen and (max-width: 768px){
   *{
-    font-size: 100%
+    font-size: 120%
   }
 
   h1 {
@@ -335,8 +269,9 @@ body {
   }
 
   article {
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 6%;
+    font-size: 70%;
   }
 
   .a1 {
@@ -351,22 +286,23 @@ body {
     margin-left: 2%;
   }
 
-
-nav{
-  grid-column: 2 /2;
-}
-
   .buttonF, .buttonM, .buttonIactive{
     padding: 9% 15% 9% 15%;
     text-decoration: none;
     border-radius: 50px;
-    font-size: 200%;
-    margin-left: auto;
+    font-size: 100%;
+    margin-left: 50px;
   }
 
   .link{
     margin-top: 25%;
   }
 
+  nav{
+    display: flex;
+    position: fixed;
+    margin-top: 85vh;
+  }
 
-} */
+
+}

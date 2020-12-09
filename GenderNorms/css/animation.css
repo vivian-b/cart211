@@ -3,7 +3,7 @@
 .slideL {
 	opacity: 0;
 	transform: translateX(-2em);
-	transition: all 1s .35s ease-out;
+	transition: all 1s .2s ease-out;
 	will-change: all;
 }
 
@@ -15,7 +15,7 @@
 .slideR {
 	opacity: 0;
 	transform: translateX(2em);
-	transition: all 1s .35s ease-out;
+	transition: all 1s .2s ease-out;
 	will-change: all;
 }
 

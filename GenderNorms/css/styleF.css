@@ -195,6 +195,7 @@ body {
 
 
 
+
 /* tablet [1024 x 768] & deskstop (1) [1366 x 768] size */
 @media only screen and (min-width: 1024px){
   *{
@@ -218,7 +219,7 @@ body {
     grid-gap: 2vmin;
   }
 
-  .buttonI, .buttonM, .buttonFactive{
+  .buttonF, .buttonI, .buttonMactive{
     padding: 9% 20% 9% 20%;
     text-decoration: none;
     border-radius: 45px;
@@ -259,15 +260,12 @@ body {
   }
 
   .a1 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 1;
-    background-color: #C786FF;
     padding: 28% 3% 3% 3%;
     margin-bottom: 2%;
   }
 
 
-  .buttonI, .buttonM, .buttonFactive{
+  .buttonF, .buttonI, .buttonMactive{
     padding: 9% 20% 9% 20%;
     text-decoration: none;
     border-radius: 50px;
