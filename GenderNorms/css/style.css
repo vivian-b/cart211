@@ -106,6 +106,11 @@ section.chatbox {
   box-shadow: 4px 4px 6px 0px #B2B2B2;
 }
 
+.user{
+max-width: 70vw;
+min-width: 20vw;
+}
+
 /* Index Text bubble size variation */
 .a4I {
   margin-right: auto;
@@ -156,7 +161,7 @@ section.chatbox {
   margin-right: 9%;
   color: #878787;
   height: 100%;
-  font-size: 60%;
+  font-size: 50%;
 }
 
 /* Button decorations */
@@ -221,6 +226,7 @@ section.chatbox {
   background-color: #62C3FF;
 }
 
+
 /* mobile screen [750px x 1334px] size */
 @media only screen and (max-width: 750px) {
   * {
@@ -258,7 +264,7 @@ section.chatbox {
 
   footer {
     padding: 5%;
-    height: 70vh;
+    height: 80vh;
     grid-template-columns: 60vw;
   }
 

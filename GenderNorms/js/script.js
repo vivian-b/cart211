@@ -36,3 +36,16 @@ function isElementInViewport(el) {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+
+// failed experiment trying to add textboxes through interactions
+
+// var newBox = '  <article class="user textbox slideR sideR show-on-scroll">' +
+//     '<div contenteditable="true">'+
+//     '  <p> ( your answer )</p>' +
+//   '  </div>' +
+// '  </article>'
+//
+// function mousePressed(){
+//
+//   document.getElementById("newComment").innerHTML = newBox
+// }
