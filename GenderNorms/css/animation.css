@@ -1,32 +1,28 @@
 /* animations */
-
-
+/* Left Textboxes sliding */
 .slideL {
-	opacity: 0;
-	transform: translateX(-2em);
-	transition: all 1s .2s ease-out;
-	transition-delay: 1.25s;
-
-	will-change: all;
+  opacity: 0;
+  transform: translateX(-2em);
+  transition: all 0.75s .5s ease-out;
+  transition-delay: 1.25s;
+  will-change: all;
 }
 
 .slideL.is-visible {
-	opacity: 1;
-	transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
-
-
+/* Right Textboxes sliding */
 .slideR {
-	opacity: 0;
-	transform: translateX(2em);
-	transition: all 1s .2s ease-out;
-	transition-delay: 1.25s;
-
-	will-change: all;
+  opacity: 0;
+  transform: translateX(2em);
+  transition: all 0.75s .5s ease-out;
+  transition-delay: 1.25s;
+  will-change: all;
 }
 
 .slideR.is-visible {
-	opacity: 1;
-	transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }

@@ -1,13 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;@400;700&display=swap');
 
-/* main page style sheet */
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+body {
+  background-color: #F7FCFB;
+  color: #656565;
   font-family: 'Roboto', arial, sans-serif;
   font-weight: 400;
-  font-size: 2vmin;
-  line-height: 136%;
+}
+
+/* overall text size/line height */
+p {
+  font-size: 4vmin;
+  line-height: 135%;
+}
+
+/* navigation bar positioning */
+nav {
+  margin-top: 45vh;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* footer arrangements */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 35vh;
+}
+
+footer {
+  padding: 5%;
+  max-height: 35vh;
+  width: 100vw;
+  background-color: #d1d1d1;
+  /* positioning */
+  bottom: 0;
+  position: absolute;
+  /* grid */
+  display: grid;
+  grid-template-columns: 60vw;
+  grid-template-rows: 1fr;
 }
 
 /* GRID SETUP */
@@ -21,49 +61,44 @@ section.parent {
   grid-gap: 3vmin;
 }
 
+/* title size */
 h1 {
   color: #FFF;
   font-weight: 700;
+  font-size: 140%;
+  line-height: 125%;
 }
 
-nav {
-  margin-top: 45vh;
-  position: sticky;
-  top: 0;
-}
-
+/* overall textbubble traits */
 .textbox {
-  grid-column: 2 / 3;
   background-color: #ffffff;
-
   height: auto;
-  margin-top: 25px;
-
+  margin-bottom: 3%;
 }
 
 /* title box */
 .a1 {
+  grid-column: 2 / 3;
   grid-row: 1 / 1;
-  padding: 25% 3% 3% 3%;
   box-shadow: 4px 4px 6px 0px #B2B2B2;
-
 }
 
-
+/* all textbubbles positioning */
 section.chatbox {
-grid-column: 2 / 3;
-display:grid;
-grid-template-columns: 1fr;
-grid-template-rows: 1fr;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
+/* left side textbubble traits*/
 .sideL {
   margin-right: auto;
   padding: 2% 3% 2% 4%;
   box-shadow: -4px 4px 6px 0px #B2B2B2;
-
 }
 
+/* right side textbubble traits*/
 .sideR {
   margin-left: auto;
   padding: 2% 4% 2% 3%;
@@ -71,52 +106,60 @@ grid-template-rows: 1fr;
   box-shadow: 4px 4px 6px 0px #B2B2B2;
 }
 
-/* Index Texts */
-.a4I{
+/* Index Text bubble size variation */
+.a4I {
   margin-right: auto;
 }
 
- ,.a6I, .a7I, .a8I{
+.a6I, .a7I, .a8I {
   margin-left: 19%;
 }
 
-.a3I, .a5I, .a9I{
+.a3I, .a5I, .a9I {
   margin-left: 25%;
 }
 
-
-/* G&G Texts */
-/* left side */
- .a7, .a8,.a3, .a13, .a14,  .a20,.a21  {
+/* Girls & Guys bubble size variation */
+/* right side */
+.a7, .a8, .a3, .a13, .a14, .a20, .a21 {
   margin-left: 15%;
 }
 
- .a6,.a18 {
+.a6, .a18 {
   margin-left: 35%;
 }
 
-.a12, .a15  {
- margin-left: 40%;
+.a12, .a15 {
+  margin-left: 40%;
 }
 
-.a22{
+.a22 {
   margin-left: 50%
 }
 
 /* left side */
-
-.a4, .a19, .a10, .a11  {
- margin-right: 15%;
+.a4, .a19, .a10, .a11 {
+  margin-right: 15%;
 }
 
-.a16{
- margin-right: 40%;
+.a16 {
+  margin-right: 40%;
 }
 
 .a9 {
-margin-right: 45%;
+  margin-right: 30%;
 }
 
+/* Footer Text (about) */
+.about {
+  grid-column: 1/1;
+  margin-right: 9%;
+  color: #878787;
+  height: 100%;
+  font-size: 60%;
+}
+
+/* Button decorations */
 .buttonF, .buttonM, .buttonI {
   background-color: #656565;
   color: #F7FCFB;
@@ -126,7 +169,7 @@ margin-right: 45%;
   font-size: 90%;
 }
 
-.buttonF:hover, .buttonM:hover, .buttonI:hover {
+.buttonF:hover, .buttonM:hover, .buttonI:hover, .buttonEssay:hover {
   transition: 0.2s all;
 }
 
@@ -134,99 +177,141 @@ margin-right: 45%;
   margin-top: 15%;
 }
 
-.bar {
-  margin-top: 5%;
-  grid-column: 1/3;
-  grid-row: 3/3;
-padding-left: 40%;
-height: 20vh;
-}
-
-.buttonEssay{
+.buttonEssay {
   background-color: #FFF;
   color: #c4c4c4;
   box-shadow: 0 0 5px #c4c4c4;
-  padding: 2% 20% 2% 20%;
+  padding: 2% 15% 2% 15%;
   text-decoration: none;
   border-radius: 50px;
-  font-size: 90%;
-
+  font-size: 80%;
 }
 
+.buttonEssay:hover {
+  background-color: #969696;
+}
+
+.linkFooter {
+  grid-column: 2 / 2;
+}
+
+/* Color Control */
 /* Index Color Palette */
 .a1, .buttonI:hover, .active, .sideR {
   background-color: #56E863;
 }
 
-body {
-  background-color: #F7FCFB;
-  color: #656565;
-}
-
 /* Girl Color palette */
-.buttonF:hover, .verF, .activeF, .titleF {
-  background-color: #C786FF;
-}
-
 #girlPage {
   background-color: #FDF8FF;
   color: #656565;
 }
 
-/* Guy color palette */
-.buttonM:hover, .verM, .activeM, .titleM {
-  background-color: #62C3FF;
+.buttonF:hover, .verF, .activeF, .titleF {
+  background-color: #C786FF;
 }
 
+/* Guy color palette */
 #guyPage {
   background-color: #f5fcfd;
   color: #656565;
 }
 
-/* tablet [1024 x 768] & deskstop (1) [1366 x 768] size */
-@media only screen and (min-width: 1024px) {
+.buttonM:hover, .verM, .activeM, .titleM {
+  background-color: #62C3FF;
+}
+
+/* mobile screen [750px x 1334px] size */
+@media only screen and (max-width: 750px) {
   * {
-    font-size: 90%
+    font-size: 2vmin;
   }
 
   h1 {
-    font-size: 480%;
-    line-height: 90%;
-    padding-top: 20%;
-  }
-
-  nav {
-    margin-top:100%;
-  }
-
-  article {
-    border-radius: 35px;
-    padding: 3% 3% 3% 3%;
+    font-size: 15vmin;
+    line-height: 105%;
+    padding-bottom: 4%;
   }
 
   section.parent {
     display: grid;
-    grid-template-columns: 15vw 1fr;
-    grid-gap: 2vmin;
+    padding: 2vmin;
+    grid-template-columns: 1vw 1fr;
+    grid-gap: 5vmin;
   }
 
-  .link {
-    margin-top: 25%;
+  section.chatbox {
+    grid-column: 1/3
+  }
+
+  article {
+    border-radius: 50px;
+    font-size: 70%;
+    padding: 3% 5% 3% 5%;
+  }
+
+  nav {
+    display: flex;
+    position: fixed;
+    margin-top: 85vh;
+  }
+
+  footer {
+    padding: 5%;
+    height: 70vh;
+    grid-template-columns: 60vw;
+  }
+
+  .a1 {
+    grid-column: 1 / 3;
+    padding: 28% 3% 3% 3%;
+  }
+
+  .a2I, .a2 {
+    margin-top: 9%;
+  }
+
+  .a6, .a13 {
+    margin-left: 2%;
+  }
+
+  .buttonF, .buttonM, .buttonI {
+    padding: 9% 20% 9% 20%;
+    border-radius: 50px;
+    font-size: 110%;
+    margin-left: 50px;
+  }
+
+  .buttonM {
+    margin-left: 60px;
+  }
+
+  .buttonEssay {
+    padding: 10% 20% 10% 20%;
+    font-size: 60%;
+  }
+
+  .about {
+    font-size: 55%;
+  }
+
+  .textbox {
+    margin-bottom: 5%;
+    border-radius: 40px;
+  }
+
+  .chatbox {
+    margin-bottom: 14%;
+  }
+
+  /* Index Text bubble size variation */
+  .a6I, .a7I, .a8I {
+    margin-left: 5%;
   }
 }
 
-/* desktop [1920 x 1080] (2) size */
+/* wide desktop [1920 x 1080] (2) size */
 @media only screen and (max-width: 1920px) {
-  * {
-    font-size: 115%
-  }
-
-  h1 {
-    font-size: 480%;
-    line-height: 100%;
-    padding-top: 0%;
-  }
-
   section.parent {
     display: grid;
     padding: 5vmin;
@@ -239,72 +324,23 @@ body {
     padding: 3% 3% 3% 3%;
   }
 
-  .a1 {
-    padding: 28% 3% 3% 3%;
-    margin-bottom: 2%;
-  }
-
-  .link {
-    margin-top: 25%;
-  }
-}
-
-/* mobile screen [360 x 640] size */
-@media only screen and (max-width: 768px) {
-  * {
-    font-size: 120%
-  }
-
   h1 {
-    font-size: 400%;
-    line-height: 125%;
-    padding-bottom: 4%;
-  }
-
-  section.parent {
-    display: grid;
-    padding: 3vmin;
-    grid-template-columns: 1vw 1fr;
-    grid-gap: 5vmin;
-  }
-
-  article {
-    border-radius: 50px;
-    padding: 6%;
-    font-size: 70%;
+    font-size: 16vmin;
+    line-height: 110%;
   }
 
   .a1 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 1;
-    padding: 28% 3% 3% 3%;
-    margin-bottom: 2%;
-  }
-
-  .a6, .a13 {
-    margin-left: 2%;
-  }
-
-  .buttonF, .buttonM, .buttonI {
-    padding: 9% 15% 9% 15%;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 100%;
-    margin-left: 50px;
+    padding: 35% 3% 3% 3%;
+    margin-bottom: 1%;
+    border-radius: 80px;
   }
 
   .link {
     margin-top: 25%;
   }
 
-  nav {
-    display: flex;
-    position: fixed;
-    margin-top: 85vh;
+  footer {
+    padding: 6%;
+    font-size: 6vmin
   }
-
-  .textbox {
-    margin-top: 10px;
-  }
-
 }
